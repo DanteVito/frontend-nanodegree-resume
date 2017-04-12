@@ -19,21 +19,21 @@ var bio = {
 var education = {
 	"schools" : [
 			{
-				"name": "university",
-				"location": "brazil",
+				"name": "Good Dog University",
+				"location": "Russia",
 				"degree": "bach",
 				"majors": ["CS"],
 				"dates": 2000,
-				"url": "http://site.com"
+				"url": "http://www.gduniv.com"
 
 			},
 			{
-				"name": "university",
-				"location": "brazil",
-				"degree": "bach",
-				"majors": ["CS"],
-				"dates": 2000,
-				"url": "http://site.com"
+				"name": "Spatial Station College",
+				"location": "Outer Space",
+				"degree": "master",
+				"majors": ["MS"],
+				"dates": 2005,
+				"url": "http://www.outerspace.site.com"
 
 			}
 		],
@@ -57,31 +57,33 @@ var education = {
 //projects
 var projects = {
 	"project" : [
-	{"title": "title of project",
-	"dates":"dates worked",
-	"description": "description of project",
-	"images": ["link1","link2"]
+	{"title": "Space Research of Life",
+	"dates":"2000-2010",
+	"description": "Trying to find life in the outer space",
+	"images": ["https://advocateofentropy.files.wordpress.com/2014/05/multiple-cells.jpg",
+		"https://userscontent2.emaze.com/images/e5c42ed8-aafd-49dc-bbe7-44ffa0364500/640e0690ab563144364b74fa67d6f6ae.jpg"]
 	},
-	{"title": "title of project",
-	"dates":"dates worked",
-	"description": "description of project",
-	"images": ["link1","link2"]
+	{"title": "Ancient Aliens Computers",
+	"dates":"2010-2015",
+	"description": "Alien technology are studied behind the lens of",
+	"images": ["http://www.openminds.tv/wp-content/uploads/I-Dont-Always-Aliens.jpg",
+		"https://pogd.es/assets/bg/Ancient-Aliens.jpg"]
 	}]
 }
 
 //work
 var work = {
 	"jobs" : [
-		{"employer": "employer",
-		"title": "title",
-		"location": "location",
-		"dates": "dates",
-		"description": "description"},
-		{"employer": "employer",
-		"title": "title",
-		"location": "location",
-		"dates": "dates",
-		"description": "description"}]
+		{"employer": "Ultra Spacial Security",
+		"title": "Analyst",
+		"location": "top secret location",
+		"dates": "2000-2010",
+		"description": "Ultra secrets activites envolving aliens"},
+		{"employer": "Global Space",
+		"title": "Astronaut",
+		"location": "Moon",
+		"dates": "2010-",
+		"description": "Several importants activites"}]
 }
 
 // starting header
