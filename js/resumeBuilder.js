@@ -112,8 +112,6 @@ var work = {
 	$("#header").prepend(HTMLheaderRole);
 	$("#header").prepend(HTMLheaderName);
 	
-
-
 // building HTMLskillsStart to the id=header
 if (bio["skills"].length > 0) {
 
@@ -125,8 +123,29 @@ if (bio["skills"].length > 0) {
 	}
 }
 
+// work experience
+/*work["jobs"].forEach(function(job){
+	var HTMLworkEmployer = HTMLworkEmployer.replace("%data%", job["employer"]);
+	var HTMLworkTitle = HTMLworkTitle.replace("%data%", job["title"]);
+	$("#workExperience").append(HTMLworkEmployer);
+	$("#workExperience").append(HTMLworkTitle);	
+});
+*/
 
+for (job in work["jobs"]){
+	$("#workExperience").append(HTMLworkStart);
+	var myHTMLworkEmployer = HTMLworkEmployer.replace("%data%", work["jobs"][job]["employer"]);
+	var myHTMLworkTitle = HTMLworkTitle.replace("%data%", work["jobs"][job]["title"]);
+	var formattedEmployerTittle = myHTMLworkEmployer + myHTMLworkTitle;
+	$(".work-entry:last").append(formattedEmployerTittle);
+}
 
+/*
+HTMLworkTitle
+HTMLworkDates
+HTMLworkLocation
+HTMLworkDescription
+*/
 
 /*
 var myName = "Dante";
