@@ -8,6 +8,7 @@ var bio = {
 		"mobile": "555-444-333",
 		"email": "dante@vito.com",
 		"github": "dantevito",
+		"twitter": "dantevito",
 		"location": "beagland island"
 	},
 	"welcome": "Welcome to me page! I am a very smart dog, trust me!",
