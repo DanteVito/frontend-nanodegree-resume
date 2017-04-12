@@ -8,11 +8,11 @@ var bio = {
 		"mobile": "555-444-333",
 		"email": "dante@vito.com",
 		"github": "dantevito",
-		"location": "beagland"
+		"location": "beagland island"
 	},
-	"welcome": "Welcome to me page!",
-	"skills": ["awesomeness", "goodness", "topness"],
-	"pictureUrl": "images/fry.jpg"
+	"welcome": "Welcome to me page! I am a very smart dog, trust me!",
+	"skills": ["Advanced programming", "Problem solver", "Heuristic thinking"],
+	"pictureUrl": "images/dogbert.jpg"
 }
 
 // education
@@ -87,19 +87,27 @@ var work = {
 // starting header
 
 	// name and role
-	var myHTMLheaderName = HTMLheaderName.replace("%data%", bio["name"]);
-	var myHTMLheaderRole = HTMLheaderRole.replace("%data%", "web develloper");
-	
+	var HTMLheaderName = HTMLheaderName.replace("%data%", bio["name"]);
+	var HTMLheaderRole = HTMLheaderRole.replace("%data%", "web develloper");
+	var HTMLbioPic = HTMLbioPic.replace("%data%",bio["pictureUrl"]);
+	var HTMLwelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio["welcome"]);
 	// contacts
-	var myHTMLcontactGeneric = HTMLcontactGeneric.replace("%contact%", "mobile");
 	var HTMLmobile = HTMLmobile.replace("%data%", bio["contacts"]["mobile"]);
 	var HTMLemail = HTMLemail.replace("%data%", bio["contacts"]["email"]);
+	var HTMLgithub = HTMLgithub.replace("%data%",bio.contacts["github"]);
+	var HTMLtwitter = HTMLtwitter.replace("%data%",bio.contacts["twitter"]);
+	var HTMLlocation = HTMLlocation.replace("%data%",bio.contacts["location"]);
 	
 	$("#topContacts").append(HTMLmobile);
 	$("#topContacts").append(HTMLemail);
+	$("#topContacts").append(HTMLgithub);
+	$("#topContacts").append(HTMLtwitter);
+	$("#topContacts").append(HTMLlocation);
 
-	$("#header").prepend(myHTMLheaderRole);
-	$("#header").prepend(myHTMLheaderName);
+	$("#header").append(HTMLbioPic);
+	$("#header").append(HTMLwelcomeMsg);
+	$("#header").prepend(HTMLheaderRole);
+	$("#header").prepend(HTMLheaderName);
 	
 
 
