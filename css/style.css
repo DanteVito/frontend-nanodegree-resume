@@ -110,11 +110,14 @@ a {
 
 .orange-text {
   color: #f5ae23;
+  display: flex;
+  padding-bottom: 0;
 }
 
 .white-text {
   font-weight: bold;
   color: #fff;
+
 }
 
 .gray {
@@ -155,6 +158,9 @@ a {
 ul {
   list-style-type: none;
 }
+.role-style {
+  padding-top: 20px;
+}
 
 .biopic {
   float: left;
@@ -167,8 +173,16 @@ img {
   padding: 10px;
 }
 
+.project-image {
+  max-width: 300px;
+  margin-right: 15%;
+}
 span {
   padding: 5px;
+}
+
+.online-url {
+  margin-top: 0;
 }
 
 #lets-connect {
@@ -189,18 +203,32 @@ span {
   }
 }
 
+
 @media only screen and (max-width: 750px) {
   #lets-connect {
     margin-top: 10%;
+  }
+  .mobile-contact {
+    display: none;
   }
   .biopic {
     width: 150px;
   }
   .welcome-message {
     display: none;
+    margin-top: 10px;
   }
 }
 
+
+@media only screen and (max-width: 800px) {
+  .mobile-contact {
+    display: none;
+  }
+  .project-image {
+    margin-right: 0;
+  }
+}
 #map {
   display: block;
   height: 100%;
@@ -209,7 +237,7 @@ span {
 
 #mapDiv {
   height: 400px;
-  width: 100%;
+  width: 80%;
   padding-bottom: 5%;
 }
 
@@ -217,5 +245,22 @@ span {
   #skills-h3,
   .biopic {
     display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .role-style {
+    color: white;
+    font-size: 80%;
+  }
+  .contact-sm {
+    padding: 0;
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .horizontal-bar {
+    display: none;
   }
 }
